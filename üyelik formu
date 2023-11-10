@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Üyelik Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Üyelik Formu</h2>
+        <form action="kayit.php" method="POST">
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required>
+
+            <label for="soyad">Soyadınız:</label>
+            <input type="text" id="soyad" name="soyad" required>
+
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sifre">Şifre:</label>
+            <input type="password" id="sifre" name="sifre" required>
+
+            <label for="sifreTekrar">Şifre Tekrar:</label>
+            <input type="password" id="sifreTekrar" name="sifreTekrar" required>
+
+            <input type="submit" value="Üye Ol">
+        </form>
+    </div>
+</body>
+</html>
